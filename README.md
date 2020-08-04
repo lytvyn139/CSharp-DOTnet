@@ -455,10 +455,14 @@ If you wanted to do this, a method would be needed to remove the data stored in 
 int num = 7;
 string numAsString = num.ToString(); //Evaluates as "7"
 ```
+## FUNCTIONS
 
+### Accessibility Levels
+* Public specifies that the function is fully accessible from any part of the program that can see the file it is written in.
+* Private restricts a function to only be called from within the same scope as its definition. 
+If we leave out the accessibility keyword, the default accessibility of a function is private. We will be getting more in depth into function accessibility and the other types that exist, but for now it is safe to assume every function we will be creating can be prefixed with the public keyword.
 
-## static
-
+### static
 Any method that has the `static` keyword belongs to the class. What this means is that we won't have to make an instance of the class `Program` to be able to run a given method.
 
 ```cs
@@ -486,11 +490,50 @@ namespace HelloWorld
 }
 ```
 
+### Function Parameters
+We define what kind of input we want by declaring parameters. Let's declare a parameter named "firstName" that will be of type string. Our function will still not return anything, but its output will be a little bit more personalized. Note that we need to not only declare a parameter name but also specify the parameter's type.
+```cs
+public static void SayHello(string firstName)
+{
+    Console.WriteLine($"Hello, {firstName}, how are you doing today?");
+}
+We can invoke this function by calling its name and passing in the correct number of arguments.
+
+SayHello("Andrew");
+```
 For now this will be a good way for us to structure our code. If we didn't include `static`, we would have to make an instance of `HelloWorld` in order to run `Print1To255()`.
 
+### difference between a parameter and an argument? 
+"firstName" is a parameter while "Andrew" is an argument. We define parameters. We pass in arguments into functions.
+
+### Default Parameter Values
+It's good to have default parameter values sometimes. Let's revisit our SayHello function. If we don't know the name of the person that we are greeting, we can have a default value. For example, we can just say "Hey, buddy."
 ```cs
-HelloWorld hello1 = new HelloWorld();
-hello1.Print1To255();
+public static void SayHello(string firstName = "buddy")
+{
+    Console.WriteLine($"Hey {firstName}");
+}
+// We can call it without providing any arguments and the default value will be used...
+SayHello();
+// ...or we can call it with an argument and that argument's value will be used
+SayHello("Yoda");
 ```
+
+
+### Return
+The final piece of a function definition is the return type. When we write functions in C# we must specify what data type, if any, the function will return. By now you've surely noticed the word void in all of our function definitions. 
+
+### Void 
+is a keyword that signifies that the function has no return. In many cases, we want our function to return some sort of value that we can use later in our program. Let's modify our SayHello function and observe the differences:
+```cs
+public static string SayHello(string firstName = "buddy")
+{
+    return $"Hey {firstName}";
+}
+string greeting;
+greeting = SayHello();
+Console.WriteLine(greeting);
+```
+
 ## Author
 IURII LYTVYN

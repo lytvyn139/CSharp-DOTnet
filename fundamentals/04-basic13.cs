@@ -4,6 +4,22 @@ namespace basic13
 {
     class Program
     {
+        public static void Main(string[] args)
+        {
+            int[] NumbersArray = { 44, 54, -2, 16, 656, -44, 766, -126 };
+            //PrintNumber();
+            //PrintOdds();
+            //PrintSum();
+            //LoopArray(NumbersArray);
+            //FindMax(NumbersArray);
+            //GetAverage(NumbersArray);
+            //GreaterThanY(NumbersArray, 15);
+            //SquareArrayValues(NumbersArray);
+            //EliminateNegatives(NumbersArray);
+            //MinMaxAverage(NumbersArray);
+            //ShiftValues(NumbersArray);
+            //LoopObArray(NumToString(NumbersArray));
+        }
         public static void PrintNumber()
         {
             for (int i = 1; i <= 255; i++)
@@ -15,7 +31,7 @@ namespace basic13
         {
             for (int i = 1; i <= 255; i++)
             {
-                if ((i % 2) != 0)
+                if (i % 2 != 0)
                 {
                     Console.WriteLine(i);
                 }
@@ -34,7 +50,9 @@ namespace basic13
             }
         }
         public static void LoopArray(int[] numbers)
+
         {
+            int[] test = { 1, 5, -6, 4, 0, 7, -9, 6, 6 };
             // Write a function that would iterate through each item of the given integer array and 
             // print each value to the console.
             foreach (int i in numbers)
@@ -131,21 +149,7 @@ namespace basic13
             Console.WriteLine($"the min in the array is {min}");
         }
 
-        public static void Main(string[] args)
-        {
-            int[] test = { 1, 5, -6, 4, 0, 7, -9, 6, 6 };
-            LoopArray(test);
-            // FindMax(test);
-            // GetAverage(test);
-            // GreaterThanY(test,0);
-            // EliminateNegatives(test);
-            // // SquareArrayValues(test);
-            // LoopArray(test);
-            // MinMaxAverage(test);
-            // ShiftValues(test);
-            // LoopArray(test);
-            LoopObArray(NumToString(test));
-        }
+
         public static void ShiftValues(int[] numbers)
         {
             // Given an integer array, say [1, 5, 10, 7, -2], 

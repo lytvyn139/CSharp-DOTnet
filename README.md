@@ -37,7 +37,7 @@ dotnet run
 #it will create bin/Debug folder
 ```
 ```cs
-# /home/coding/dojo/09-c#/C_GIT/FirstCSharp/bin/Debug/CSharp-sandbox.template.json
+// CSharp-sandbox/bin/Debug/netcoreapp3.1/CSharp-sandbox.runtimeconfig.json
 {
   "runtimeOptions": {
     "tfm": "netcoreapp3.1",

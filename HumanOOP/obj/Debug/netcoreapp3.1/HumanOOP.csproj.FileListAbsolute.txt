@@ -1,0 +1,13 @@
+/home/coding/dojo/09-c#/C_GIT/HumanOOP/bin/Debug/netcoreapp3.1/HumanOOP
+/home/coding/dojo/09-c#/C_GIT/HumanOOP/bin/Debug/netcoreapp3.1/HumanOOP.deps.json
+/home/coding/dojo/09-c#/C_GIT/HumanOOP/bin/Debug/netcoreapp3.1/HumanOOP.runtimeconfig.json
+/home/coding/dojo/09-c#/C_GIT/HumanOOP/bin/Debug/netcoreapp3.1/HumanOOP.runtimeconfig.dev.json
+/home/coding/dojo/09-c#/C_GIT/HumanOOP/bin/Debug/netcoreapp3.1/HumanOOP.dll
+/home/coding/dojo/09-c#/C_GIT/HumanOOP/bin/Debug/netcoreapp3.1/HumanOOP.pdb
+/home/coding/dojo/09-c#/C_GIT/HumanOOP/obj/Debug/netcoreapp3.1/HumanOOP.csprojAssemblyReference.cache
+/home/coding/dojo/09-c#/C_GIT/HumanOOP/obj/Debug/netcoreapp3.1/HumanOOP.AssemblyInfoInputs.cache
+/home/coding/dojo/09-c#/C_GIT/HumanOOP/obj/Debug/netcoreapp3.1/HumanOOP.AssemblyInfo.cs
+/home/coding/dojo/09-c#/C_GIT/HumanOOP/obj/Debug/netcoreapp3.1/HumanOOP.csproj.CoreCompileInputs.cache
+/home/coding/dojo/09-c#/C_GIT/HumanOOP/obj/Debug/netcoreapp3.1/HumanOOP.dll
+/home/coding/dojo/09-c#/C_GIT/HumanOOP/obj/Debug/netcoreapp3.1/HumanOOP.pdb
+/home/coding/dojo/09-c#/C_GIT/HumanOOP/obj/Debug/netcoreapp3.1/HumanOOP.genruntimeconfig.cache

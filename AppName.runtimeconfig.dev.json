@@ -1,6 +1,6 @@
 /*
- AppName/bin/Debug/netcoreapp3.1/AppName.runtimeconfig.json
- AppName/bin/Debug/netcoreapp3.1/AppName.runtimeconfig.dev.json
+ /bin/Debug/netcoreapp3.1/AppName.runtimeconfig.json
+ 
 */
 {
   "runtimeOptions": {

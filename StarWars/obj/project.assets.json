@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/coding/dojo/09-c#/C_GIT/StarWars/StarWars.csproj",
+      "projectUniqueName": "/home/coding/dojo/09-c#/C_GIT/StarWars-original/StarWars.csproj",
       "projectName": "StarWars",
-      "projectPath": "/home/coding/dojo/09-c#/C_GIT/StarWars/StarWars.csproj",
+      "projectPath": "/home/coding/dojo/09-c#/C_GIT/StarWars-original/StarWars.csproj",
       "packagesPath": "/home/me/.nuget/packages/",
-      "outputPath": "/home/coding/dojo/09-c#/C_GIT/StarWars/obj/",
+      "outputPath": "/home/coding/dojo/09-c#/C_GIT/StarWars-original/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/me/.nuget/NuGet/NuGet.Config"

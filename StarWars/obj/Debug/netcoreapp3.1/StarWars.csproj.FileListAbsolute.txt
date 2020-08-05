@@ -21,3 +21,16 @@
 /home/coding/dojo/09-c#/C_GIT/StarWars/obj/Debug/netcoreapp3.1/StarWars.dll
 /home/coding/dojo/09-c#/C_GIT/StarWars/obj/Debug/netcoreapp3.1/StarWars.pdb
 /home/coding/dojo/09-c#/C_GIT/StarWars/obj/Debug/netcoreapp3.1/StarWars.genruntimeconfig.cache
+/home/coding/dojo/09-c#/C_GIT/StarWars-original/bin/Debug/netcoreapp3.1/StarWars
+/home/coding/dojo/09-c#/C_GIT/StarWars-original/bin/Debug/netcoreapp3.1/StarWars.deps.json
+/home/coding/dojo/09-c#/C_GIT/StarWars-original/bin/Debug/netcoreapp3.1/StarWars.runtimeconfig.json
+/home/coding/dojo/09-c#/C_GIT/StarWars-original/bin/Debug/netcoreapp3.1/StarWars.runtimeconfig.dev.json
+/home/coding/dojo/09-c#/C_GIT/StarWars-original/bin/Debug/netcoreapp3.1/StarWars.dll
+/home/coding/dojo/09-c#/C_GIT/StarWars-original/bin/Debug/netcoreapp3.1/StarWars.pdb
+/home/coding/dojo/09-c#/C_GIT/StarWars-original/obj/Debug/netcoreapp3.1/StarWars.csprojAssemblyReference.cache
+/home/coding/dojo/09-c#/C_GIT/StarWars-original/obj/Debug/netcoreapp3.1/StarWars.AssemblyInfoInputs.cache
+/home/coding/dojo/09-c#/C_GIT/StarWars-original/obj/Debug/netcoreapp3.1/StarWars.AssemblyInfo.cs
+/home/coding/dojo/09-c#/C_GIT/StarWars-original/obj/Debug/netcoreapp3.1/StarWars.csproj.CoreCompileInputs.cache
+/home/coding/dojo/09-c#/C_GIT/StarWars-original/obj/Debug/netcoreapp3.1/StarWars.dll
+/home/coding/dojo/09-c#/C_GIT/StarWars-original/obj/Debug/netcoreapp3.1/StarWars.pdb
+/home/coding/dojo/09-c#/C_GIT/StarWars-original/obj/Debug/netcoreapp3.1/StarWars.genruntimeconfig.cache

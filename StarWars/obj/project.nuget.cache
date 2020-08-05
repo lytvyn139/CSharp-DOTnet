@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ejunG6V7sLnx0r4ZMPEVOV1hPnTvr5p3Iqqcz+zwdJB8dDsxcnhe5mgjplZtUvdmwEg1GtLYJnP3molqpHBAgg==",
+  "dgSpecHash": "7kx0v/OziblZXO6CisnBpgYx3kQQebKrRh1UDwGCo7nGv7h9sT0mqyXDn+zDJv6FdOhC6oQvJWVzz6Kg/nvCPA==",
   "success": true,
-  "projectFilePath": "/home/coding/dojo/09-c#/C_GIT/StarWars/StarWars.csproj",
+  "projectFilePath": "/home/coding/dojo/09-c#/C_GIT/StarWars-original/StarWars.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

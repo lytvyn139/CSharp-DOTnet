@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+
 namespace WizardNinjaSamurai.Models
 {
     public class Human
@@ -7,11 +9,14 @@ namespace WizardNinjaSamurai.Models
         public int Strength;
         public int Intelligence;
         public int Dexterity;
-        public int health;
+        protected int health;
 
         public int Health
         {
-            get { return health; }
+            get
+            {
+                return health;
+            }
         }
 
         public Human(string name)
@@ -33,26 +38,28 @@ namespace WizardNinjaSamurai.Models
         }
 
         //METHODS START
-        //virtual can be called from the child class
-        public virtual int Attack(Human target)
-        {
-            int dmg = Strength * 3;
-            target.health -= dmg;
-            Console.WriteLine($"{Name} attacked {target.Name} for {dmg} damage!");
-            return target.health;
-        }
         public void ShowStats()
         {
-            Console.WriteLine($" name: {Name} \n strength: {Strength} \n intelligence: {Intelligence} \n dexterity: {Dexterity} \n health: {health} \n");
+            Console.WriteLine($"{Name}: \n             strength: {Strength}   intelligence: {Intelligence}   dexterity: {Dexterity}   health: {health} \n");
         }
 
-        public int ApplyDamage(int dmg)
+        //virtual can be called from the child class
+        public virtual void Attack(Human target)
         {
-            return health -= dmg;
+            int dmg = Strength * 3; //the default Strength is 3
+            target.ApplyDamage(dmg);
+            Console.BackgroundColor = ConsoleColor.DarkMagenta;
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine($"{Name} attacked {target.Name} for {dmg} damage! {target.Name} now has {target.health} HP");
+            Console.ResetColor();
         }
-        public int PerformHeal(int dmg)
+        public void ApplyDamage(int dmg)
         {
-            return health += dmg;
+            health -= dmg;
+        }
+        public void PerformHeal(int dmg)
+        {
+            health += dmg;
         }
         //METHODS END
 

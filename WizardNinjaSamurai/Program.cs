@@ -6,14 +6,41 @@ namespace WizardNinjaSamurai
     {
         static void Main(string[] args)
         {
+            Console.Clear();
             Console.WriteLine("* INIT *");
-            Ninja Shinobi = new Ninja("Shinobi");
-            Wizard Gendalf = new Wizard("Gendalf");
-            Samurai Jack = new Samurai("Jack");
-            Gendalf.ShowStats();
+            Ninja Shinobi = new Ninja("Ninja");
+            Wizard Gendalf = new Wizard("Wizzard");
+            Samurai Jack = new Samurai("Samurai");
+
+            // Shinobi.ShowStats();
+            // Gendalf.ShowStats();
+            // Jack.ShowStats();
+
+            // Shinobi.Attack(Gendalf);
+            // Shinobi.Attack(Jack);
+
+            // Gendalf.Attack(Shinobi);
+            Gendalf.Attack(Jack);
+
             Jack.Attack(Gendalf);
-            Gendalf.ShowStats();
+            Jack.Attack(Shinobi);
+            Jack.Attack(Shinobi);
+            Jack.Attack(Shinobi);
+            Jack.Attack(Shinobi);
+            Jack.Attack(Shinobi);
+            Jack.Attack(Shinobi);
+            Jack.Attack(Shinobi);
+            Jack.Attack(Shinobi);
+            Jack.Attack(Shinobi);
+            Jack.Attack(Shinobi);
+            Jack.Attack(Shinobi);
+            Jack.Attack(Shinobi);
+
+
+
         }
     }
 }
+
+
 

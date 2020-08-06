@@ -40,7 +40,9 @@ namespace WizardNinjaSamurai.Models
         //METHODS START
         public void ShowStats()
         {
-            Console.WriteLine($"{Name}: \n             strength: {Strength}   intelligence: {Intelligence}   dexterity: {Dexterity}   health: {health} \n");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine($"{Name}: strength: {Strength}   intelligence: {Intelligence}   dexterity: {Dexterity}   health: {health} \n");
+            Console.ResetColor();
         }
 
         //virtual can be called from the child class
@@ -48,9 +50,8 @@ namespace WizardNinjaSamurai.Models
         {
             int dmg = Strength * 3; //the default Strength is 3
             target.ApplyDamage(dmg);
-            Console.BackgroundColor = ConsoleColor.DarkMagenta;
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine($"{Name} attacked {target.Name} for {dmg} damage! {target.Name} now has {target.health} HP");
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine($"Hiyaaaa {Name} attacked {target.Name} for {dmg} damage! {target.Name} now has {target.health} HP");
             Console.ResetColor();
         }
         public void ApplyDamage(int dmg)

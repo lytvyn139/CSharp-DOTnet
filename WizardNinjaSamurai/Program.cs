@@ -12,31 +12,66 @@ namespace WizardNinjaSamurai
             Wizard Gendalf = new Wizard("Wizzard");
             Samurai Jack = new Samurai("Samurai");
 
-            // Shinobi.ShowStats();
-            // Gendalf.ShowStats();
-            // Jack.ShowStats();
+            Shinobi.ShowStats();
+            Gendalf.ShowStats();
+            Jack.ShowStats();
 
-            // Shinobi.Attack(Gendalf);
+            // // **** NINJA BLOCK ***
+
+
             // Shinobi.Attack(Jack);
+            // Shinobi.Attack(Jack);
+            // Shinobi.Attack(Jack);
+            // Shinobi.Attack(Jack);
+            // Shinobi.Attack(Jack);
+            // Shinobi.Attack(Jack);
+            // Shinobi.Attack(Jack);
+            // Shinobi.Attack(Jack);
+            // Shinobi.Attack(Jack);
+            // Shinobi.Attack(Jack);
+            // Shinobi.Attack(Jack);
+            // Shinobi.Attack(Jack);
+            // Shinobi.Attack(Jack);
+            // Shinobi.Attack(Jack);
+            // Shinobi.Attack(Jack);
+            // Shinobi.Attack(Jack);
+            // Jack.ShowStats();
+            // Shinobi.Attack(Gendalf);
+            // Shinobi.Attack(Gendalf);
+            // Shinobi.Steal(Gendalf);
+            // Shinobi.ShowStats();
+            // // *** END OF NINJA BLOCK ***
 
+            // // *** SAMURAI BLOCK ***
+
+
+            // Jack.Attack(Gendalf);
+            // Jack.Attack(Gendalf);
+            // Jack.Attack(Shinobi);
+            // Jack.Attack(Shinobi);
+            // Jack.Attack(Shinobi);
+            // Jack.Attack(Shinobi);
+            // Jack.Attack(Shinobi);
+            // Jack.Attack(Shinobi);
+            // Jack.Attack(Shinobi);
+            // Jack.Attack(Shinobi);
+            // Jack.Meditate();
+            // Jack.ShowStats();
+            // // *** SAMURAI BLOCK ***
+
+
+            // *** END OF WIZZARD BLOCK ***
+
+
+            // Gendalf.Attack(Jack);
+            // Console.WriteLine("Okay that's enought Gendalf !");
+            // Jack.ShowStats();
             // Gendalf.Attack(Shinobi);
-            Gendalf.Attack(Jack);
-
-            Jack.Attack(Gendalf);
-            Jack.Attack(Shinobi);
-            Jack.Attack(Shinobi);
-            Jack.Attack(Shinobi);
-            Jack.Attack(Shinobi);
-            Jack.Attack(Shinobi);
-            Jack.Attack(Shinobi);
-            Jack.Attack(Shinobi);
-            Jack.Attack(Shinobi);
-            Jack.Attack(Shinobi);
-            Jack.Attack(Shinobi);
-            Jack.Attack(Shinobi);
-            Jack.Attack(Shinobi);
-
-
+            // Shinobi.ShowStats();
+            // Console.WriteLine("c'mon dude that was a prank");
+            // Gendalf.Heal(Shinobi);
+            // Shinobi.ShowStats();
+            // *** END OF WIZZARD BLOCK ***
 
         }
     }

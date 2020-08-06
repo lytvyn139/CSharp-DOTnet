@@ -17,8 +17,7 @@ namespace WizardNinjaSamurai.Models
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine($"{Name} is attacking {target.Name} ({target.Health} HP)");
             target.ApplyDamage(dmg);
-            Console.WriteLine($"Hit! {target.Name} takes {dmg} damage, {target.Health} HP left");
-            PerformHeal(dmg);
+            Console.WriteLine($"Bang! {target.Name} takes {dmg} damage, {target.Health} HP left");
             Console.ResetColor();
         }
 
@@ -27,8 +26,7 @@ namespace WizardNinjaSamurai.Models
             int dmg = Intelligence * 10;
             target.PerformHeal(dmg);
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine($"{Name} has healed {target.Name} and now they have {target.Health} health!");
-            Console.WriteLine($" public void Heal(Human target) from Wizzard.cs");
+            Console.WriteLine($"{Name} blessed {target.Name} with +{dmg} HP, now {target.Name} {target.Health} HP!");
             Console.ResetColor();
         }
     }

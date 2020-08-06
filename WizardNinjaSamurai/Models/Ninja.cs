@@ -24,7 +24,6 @@ namespace WizardNinjaSamurai.Models
 
             Random rand = new Random();
             int critical = rand.Next(0, 21);
-            //int dmg = 0;
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine($"{Name} is attacking {target.Name} ({target.Health} HP)");
@@ -32,7 +31,9 @@ namespace WizardNinjaSamurai.Models
             {
                 int dmg = (target.Dexterity * 5) + 10;
                 target.ApplyDamage(dmg);
-                Console.WriteLine($"Ouch! Critical hit! {target.Name} takes {dmg} damage! {target.Health} HP left");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"Critical hit! {target.Name} takes {dmg} damage! {target.Health} HP left");
+                Console.ResetColor();
             }
             else if (critical > 4)
             {
@@ -42,7 +43,7 @@ namespace WizardNinjaSamurai.Models
             }
             else
             {
-                Console.WriteLine($"Oops! {Name} missed!");
+                Console.WriteLine($"Dammit! I've missed!");
             }
             Console.ResetColor();
         }
@@ -55,8 +56,7 @@ namespace WizardNinjaSamurai.Models
             health += 5;
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine($"{Name} has stolen 5 health from {target.Name}!");
-            Console.WriteLine($"{target.Name} now has {target.Health} health, {Name} now has {health} health.");
+            Console.WriteLine($"Thieeeef-thieeeef {target.Name} shouted, after {Name} stole 5 HP is a health !");
             Console.ResetColor();
         }
     }

@@ -1,0 +1,13 @@
+/home/coding/dojo/09-c#/C_GIT/Ninjanauts/bin/Debug/netcoreapp3.1/Ninjanauts
+/home/coding/dojo/09-c#/C_GIT/Ninjanauts/bin/Debug/netcoreapp3.1/Ninjanauts.deps.json
+/home/coding/dojo/09-c#/C_GIT/Ninjanauts/bin/Debug/netcoreapp3.1/Ninjanauts.runtimeconfig.json
+/home/coding/dojo/09-c#/C_GIT/Ninjanauts/bin/Debug/netcoreapp3.1/Ninjanauts.runtimeconfig.dev.json
+/home/coding/dojo/09-c#/C_GIT/Ninjanauts/bin/Debug/netcoreapp3.1/Ninjanauts.dll
+/home/coding/dojo/09-c#/C_GIT/Ninjanauts/bin/Debug/netcoreapp3.1/Ninjanauts.pdb
+/home/coding/dojo/09-c#/C_GIT/Ninjanauts/obj/Debug/netcoreapp3.1/Ninjanauts.csprojAssemblyReference.cache
+/home/coding/dojo/09-c#/C_GIT/Ninjanauts/obj/Debug/netcoreapp3.1/Ninjanauts.AssemblyInfoInputs.cache
+/home/coding/dojo/09-c#/C_GIT/Ninjanauts/obj/Debug/netcoreapp3.1/Ninjanauts.AssemblyInfo.cs
+/home/coding/dojo/09-c#/C_GIT/Ninjanauts/obj/Debug/netcoreapp3.1/Ninjanauts.csproj.CoreCompileInputs.cache
+/home/coding/dojo/09-c#/C_GIT/Ninjanauts/obj/Debug/netcoreapp3.1/Ninjanauts.dll
+/home/coding/dojo/09-c#/C_GIT/Ninjanauts/obj/Debug/netcoreapp3.1/Ninjanauts.pdb
+/home/coding/dojo/09-c#/C_GIT/Ninjanauts/obj/Debug/netcoreapp3.1/Ninjanauts.genruntimeconfig.cache

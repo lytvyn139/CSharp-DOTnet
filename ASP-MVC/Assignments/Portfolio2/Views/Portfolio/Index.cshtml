@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/styles.css">
+    <script type="module" src="~/js/app.js"></script>
+</head>
+<body>
+    <p><a href="/">Home</a> | <a href="/projects">Projects</a> | <a href="/contact">Contact</a></p>
+    <img src="~/img/work.png" alt="about my work">
+
+    @{
+    var StringList = new List<string>
+    {
+        "one",
+        "two",
+        "three",
+        "four"
+    };
+    
+    <p>what a good example</p>
+    foreach(var word in StringList)
+    {
+        <div>
+            <p>@word</p>
+            @if(word.Length < 4)
+            {
+                 <p>@word is a short word</p>
+            }
+       </div>
+    }
+}
+  
+</body>
+</html>

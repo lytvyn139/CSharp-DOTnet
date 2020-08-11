@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+@{
+    var StringList = new List<string>
+    {
+        "one",
+        "two",
+        "three",
+        "four"
+     };
+        
+    foreach(var word in StringList)
+    {
+        // We can render HTML from within C# code!
+        <p>@word</p>
+    }
+}
+</body>
+</html>

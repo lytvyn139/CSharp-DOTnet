@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Let's Build a Sandwich</h1>
+    <form action="/process" method="post">
+        <label for="name">Sandwich name:</label>
+        <input type="text" name="name" ><br>
+
+        <label for="proteinOne">Protein</label>
+        <select name="proteinOne">
+            <option value="">SELECT ===>></option>
+            <option value="Ham">Ham</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Turkey">Turkey</option>
+            <option value="Bacon">Bacon</option>
+            <option value="Beef">Beef</option>
+        </select> <br>
+
+        <label for="proteinTwo">Protein</label>
+        <select name="proteinTwo">
+            <option value="">SELECT ===>></option>
+            <option value="Ham">Ham</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Turkey">Turkey</option>
+            <option value="Bacon">Bacon</option>
+            <option value="Beef">Beef</option>
+        </select> <br>
+
+        <label for="bread">Bread</label>
+        <select name="bread">
+            <option value="Sourdough">Sourdough</option>
+            <option value="Rye">Rye</option>
+            <option value="Wheat">Wheat</option>
+            <option value="All grains">All grains</option>
+        </select> <br>
+
+        <p>Instructions</p>
+        <label for="instr"></label>
+        <textarea name="instr"cols="30" rows="10"></textarea>
+        <p><input type="submit" value="create sandwich"></p>
+        
+    </form>
+</body>
+</html>

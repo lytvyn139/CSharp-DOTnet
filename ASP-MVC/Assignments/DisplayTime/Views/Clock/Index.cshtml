@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMER</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Time keeps on slippin', slippin', slippin' into the future</legend>
+          @{
+            DateTime CurrentTime = DateTime.Now;
+        }
+        <p>Date: @CurrentTime.ToString("MMM d, yyy")</p>
+        <p>Time: @CurrentTime.ToString("h:mm tt") </p>
+    </fieldset>
+</body>
+</html>

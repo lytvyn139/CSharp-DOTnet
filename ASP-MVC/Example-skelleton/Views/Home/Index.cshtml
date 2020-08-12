@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+    <h1>This is still the Index view!</h1>
+    @{
+        List<string> Names = new List<string>(){
+            "Adrien", "Anne", "Benny", "Chris", "Daisy", "Phil", "Saurabh", "Will"
+        };
+        <ul>
+            @foreach(var name in Names)
+            {
+                if(name == "Benny")
+                {
+                    <li style="color:red;">@name</li>
+                }
+                else
+                {
+                    <li>@name</li>
+                }
+            }
+        </ul>
+    }
+</body>
+</html>

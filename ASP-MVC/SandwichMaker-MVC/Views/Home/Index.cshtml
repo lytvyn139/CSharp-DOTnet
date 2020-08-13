@@ -1,0 +1,47 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Home Page";
+}
+<p>comming from Views/Home/Index.cshtml</p>
+<h1>@Model</h1> //displaying the model whatever we passing into the view 
+<h1>Hungry? Build A Sandwich</h1>
+<form action="/process" method="post">
+    <label for="name">Name of Sandwich:</label>
+    <input type="text" name="Name" placeholder="Baconator"><br>
+    <label for="proteinOne">Protein One:</label>
+    <select name="ProteinOne"> //names are capital and matching Models/Sandwich.cs
+        <option value="">--Select a Protein--</option>
+        <option value="Ham">Ham--</option>
+        <option value="Turkey">Turkey</option>
+        <option value="Chicken">Chicken</option>
+        <option value="Bacon">Bacon</option>
+        <option value="Tofu">Tofu</option>
+        <option value="Roast Beast">Roast Beast</option>
+        <option value="Chickapea Patty">Chickapea Patty</option>
+    </select><br>
+    <label for="proteinTwo">Protein Two:</label>
+    <select name="ProteinTwo">
+        <option value="">--Select a Protein--</option>
+        <option value="Ham">Ham</option>
+        <option value="Turkey">Turkey</option>
+        <option value="Chicken">Chicken</option>
+        <option value="Bacon">Bacon</option>
+        <option value="Tofu">Tofu</option>
+        <option value="Roast Beast">Roast Beast</option>
+        <option value="Chickapea Patty">Chickapea Patty</option>
+    </select><br>
+    <label for="bread">Bread: </label>
+    <select name="Bread">
+        <option value="">--Select a Bread--</option>
+        <option value="Preztel Bun">Preztel Bun</option>
+        <option value="Whole Wheat">Whole Wheat</option>
+        <option value="Rye">Rye</option>
+        <option value="White">White</option>
+        <option value="Sourdough">Sourdough</option>
+        <option value="Lettuce Wrap">Lettuce Wrap</option>
+        <option value="Wheat Wrap">Wheat Wrap</option>
+    </select><br>
+    <label for="instructions">Instructions(optional): </label><br>
+    <textarea name="Instructions"  cols="30" rows="5"></textarea><br>
+    <input type="submit" value="Create Sandwich">
+</form>

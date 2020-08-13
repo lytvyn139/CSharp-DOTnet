@@ -1,0 +1,82 @@
+﻿@model Sandwich //we gonna bind this model to form
+@{
+    ViewData["Title"] = "Home Page";
+}
+<p>comming from Views/Home/Index.cshtml</p>
+//displaying the model whatever we passing into the view 
+<h1>Hungry? Build A Sandwich</h1>
+<form asp-action="Process" asp-controller="Home" method="post"> //home controller line 39
+@* <form action="/process" method="post"> *@
+    @* asp-for tag helpers *@
+    <div class="form-group">
+        <label asp-for="Name"></label> @* this name os comming from Sandwitch.cs  *@
+        <input asp-for="Name" class="form-control" name="Name" placeholder="Baconator"><br>
+        <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+        
+    <div class="form-group">
+    @* label and select = capital *@
+    <label asp-for="ProteinOne">Protein One:</label>
+    <select asp-for="ProteinOne" class="form-control"> //names are capital and matching Models/Sandwich.cs
+        <option value="">--Select a Protein--</option>
+        <option value="Ham">Ham</option>
+        <option value="Turkey">Turkey</option>
+        <option value="Chicken">Chicken</option>
+        <option value="Bacon">Bacon</option>
+        <option value="Tofu">Tofu</option>
+        <option value="Roast Beast">Roast Beast</option>
+        <option value="Chickapea Patty">Chickapea Patty</option>
+    </select>
+    <span class="text-danger" asp-validation-for="ProteinOne"></span>
+    </div>
+
+    <div class="form-group">
+    <label asp-for="ProteinTwo">Protein Two:</label>
+    <select asp-for="ProteinTwo" class="form-control">
+        <option value="">--Select a Protein--</option>
+        <option value="Ham">Ham</option>
+        <option value="Turkey">Turkey</option>
+        <option value="Chicken">Chicken</option>
+        <option value="Bacon">Bacon</option>
+        <option value="Tofu">Tofu</option>
+        <option value="Roast Beast">Roast Beast</option>
+        <option value="Chickapea Patty">Chickapea Patty</option>
+    </select>
+    </div>
+    
+
+    <div class="form-group">
+    <label asp-for="Bread">Bread: </label>
+    <select asp-for="Bread" class="form-control">
+        <option value="">--Select a Bread--</option>
+        <option value="Preztel Bun">Preztel Bun</option>
+        <option value="Whole Wheat">Whole Wheat</option>
+        <option value="Rye">Rye</option>
+        <option value="White">White</option>
+        <option value="Sourdough">Sourdough</option>
+        <option value="Lettuce Wrap">Lettuce Wrap</option>
+        <option value="Wheat Wrap">Wheat Wrap</option>
+    </select>
+    <span class="text-danger" asp-validation-for="Bread"></span>
+    </div>
+    
+
+
+    <div class="form-group">
+        <label asp-for="Instructions" >Instructions(optional): </label><br>
+        <textarea asp-for="Instructions" class="form-control" cols="30" rows="1"></textarea><br>
+        <span class="text-danger" asp-validation-for="Instructions"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Calories"></label>
+        <input asp-for="Calories" class="form-control">
+        <span class="text-danger" asp-validation-for="Calories"></span>
+    </div>
+
+    <div class="form-group">
+    <div>
+        <input type="submit" class="btn btn-danger form-control" value="Create Sandwich">
+    </div>
+    </div>
+</form>

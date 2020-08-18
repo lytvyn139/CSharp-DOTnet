@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model Lizard
+
+<form class="col-5 mx-auto" action="/update" method="post">
+    <h1>Edit lizard</h1>
+    <input type="hidden" asp-for="LizardId" value="@Model.LizardId">
+    <div class="form-group">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" class="form-control">
+    </div>
+    <span asp-validation-for="Name" class="text-danger"></span>
+
+    <div class="form-group">
+        <label asp-for="LizardType">Lizard Type:</label>
+        <input asp-for="LizardType" class="form-control">
+    </div>
+    <span asp-validation-for="LizardType" class="text-danger"></span>
+
+    <div class="form-group">
+        <label asp-for="PirateRole">Pirate Role:</label>
+        <input asp-for="PirateRole" class="form-control">
+    </div>
+    <span asp-validation-for="PirateRole" class="text-danger"></span>
+
+    <div class="form-group">
+        <label asp-for="TreasureChests">Treasure Chests:</label>
+        <input asp-for="TreasureChests" class="form-control">
+    </div>
+    <span asp-validation-for="TreasureChests" class="text-danger"></span>
+
+    <input type="submit" class="btn btn-danger" value="ARRRRR">
+    
+</form>

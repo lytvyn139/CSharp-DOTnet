@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Uglymon";
+}
+
+<audio autoplay=''>
+        <source src='~/mp3/alert.mp3' type='audio/mpeg'>
+</audio>
+
+<div class="row">
+    <div class="col-12 ">
+        <div class="card text-center text-white bg-dark">
+            <div class="flex-columm ">
+                    <h1>Uglymon</h1>  
+                    <img src="~/img/uglymon.png" height="300px" alt="uglymon">
+                        <p>Fullness: @ViewBag.Fullness</p>
+                        <p>Happiness: @ViewBag.Happiness</p>
+                        <p>Meals: @ViewBag.Work</p>
+                        <p>Energy: @ViewBag.Energy</p>
+                     <a href="/feed" class="nes-btn is-success m-2">Feed</a>
+                     <a href="/play" class="nes-btn is-success m-2">Play</a>
+                     <a href="/work" class="nes-btn is-success m-2">Work</a>
+                     <a href="/sleep" class="nes-btn is-success m-2">Sleep</a>
+                     <a href="/reset" class="nes-btn is-warning m-2">Reset</a>
+                     <a href="/utilize" class="nes-btn is-error m-2">Utilize</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
